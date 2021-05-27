@@ -52,9 +52,15 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
         
 //        guard let updateSpeedLimit = delegate?.update(speedLimit:) else { return }
         
+        if enteredSpeedLimits?.count == 0 {
+            speedLimitLabel.text = "?"
+        }
+        
         guard let enteredSpeedLimits = enteredSpeedLimits, enteredSpeedLimits.count > 0 else {
             return
         }
+        
+        
         
         for limit in enteredSpeedLimits {
             if limit.speedLimitType == .maximum {
@@ -64,6 +70,10 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
         }
     }
 
+    @IBAction func stopNavigation(_ sender: Any) {
+        navigationManager.cancelNavigation()
+    }
+    
     fileprivate lazy var navigationManager: MQNavigationManager! = {
         let manager = MQNavigationManager(delegate: self, promptDelegate: self)
         manager?.userLocationTrackingConsentStatus = .denied; // Production code requires this be set by providing the user with a Terms of Service dialog.
@@ -72,8 +82,8 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
     fileprivate lazy var routeService = MQRouteService()
 
     //set up start and destination for the route
-    fileprivate let nyc = CLLocation(latitude:40.7326808, longitude:-73.9843407)
-    fileprivate let boston = CLLocation(latitude:42.355097, longitude:-71.055464)
+
+    fileprivate let fakeDestination = CLLocation(latitude: 48.377354, longitude: -124.622832)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,22 +96,22 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
         
         let options = MQRouteOptions()
         options.highways = .allow
-        options.tolls = .avoid
+        options.tolls = .allow
         options.ferries = .avoid
         options.unpaved = .avoid
         options.internationalBorders = .disallow
         options.seasonalClosures = .avoid
-        options.maxRoutes = 3
+        options.maxRoutes = 1
         options.systemOfMeasurementForDisplayText = .imperial
         options.language = "en_US"
         
 //        let userLocation :CLLocation = locations[0] as CLLocation
-//
-//           print("user latitude = \(userLocation.coordinate.latitude)")
-//           print("user longitude = \(userLocation.coordinate.longitude)")
+        let currentLat = locationManager.location?.coordinate.latitude ?? 40
+        let currentLong = locationManager.location?.coordinate.longitude ?? 70
+        let currentLocation = CLLocation(latitude: currentLat, longitude: currentLong)
         
         //request route
-        routeService.requestRoutes(withStart: nyc, destinationLocations:[boston], options: options) { [weak self] (routes, error) in
+        routeService.requestRoutes(withStart: currentLocation, destinationLocations:[fakeDestination], options: options) { [weak self] (routes, error) in
             guard let strongSelf = self else { return }
 
             //handle error

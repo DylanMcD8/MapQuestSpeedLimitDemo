@@ -26,14 +26,20 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lL-HB-9LM">
                                 <rect key="frame" x="344" y="792" width="50" height="50"/>
+                                <color key="backgroundColor" name="Background"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="a8u-hI-BJo"/>
                                     <constraint firstAttribute="width" constant="50" id="gdE-r0-nh6"/>
                                 </constraints>
                                 <state key="normal">
-                                    <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
+                                    <imageReference key="image" image="info" catalog="system" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="bold"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="XZp-fc-zXD" kind="presentation" id="pg0-wE-Z19"/>
                                 </connections>
@@ -46,6 +52,20 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="190"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeG-vv-eMB">
+                                <rect key="frame" x="124.5" y="671.5" width="165" height="36"/>
+                                <color key="backgroundColor" name="Background"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="  Stop Navigation  "/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopNavigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g5p-4r-iFk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
@@ -58,8 +78,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="niw-iC-Glp" secondAttribute="trailing" constant="70" id="VmX-VE-5vb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EB1-lM-Mqb" secondAttribute="trailing" constant="44" id="YNb-s7-yag"/>
                             <constraint firstItem="EB1-lM-Mqb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cyy-o7-Iru"/>
+                            <constraint firstItem="WeG-vv-eMB" firstAttribute="top" secondItem="EB1-lM-Mqb" secondAttribute="bottom" constant="20" id="dK6-TH-Xwg"/>
                             <constraint firstItem="EB1-lM-Mqb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="ew5-QB-9jf"/>
                             <constraint firstItem="EB1-lM-Mqb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="h7f-Yu-7QR"/>
+                            <constraint firstItem="WeG-vv-eMB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfj-kj-AMH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lL-HB-9LM" secondAttribute="trailing" constant="20" id="wyK-tP-mDv"/>
                         </constraints>
                     </view>
@@ -384,7 +406,7 @@
         <image name="Speed Limit Blank" width="1200" height="1500"/>
         <image name="Sun Apps Logo" width="750" height="750"/>
         <image name="hand.raised" catalog="system" width="128" height="128"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info" catalog="system" width="93" height="128"/>
         <image name="safari" catalog="system" width="128" height="121"/>
         <image name="scroll" catalog="system" width="128" height="116"/>
         <image name="xmark" catalog="system" width="128" height="113"/>

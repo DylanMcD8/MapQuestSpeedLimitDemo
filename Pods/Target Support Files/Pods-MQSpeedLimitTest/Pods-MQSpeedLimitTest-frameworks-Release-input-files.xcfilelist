@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MQSpeedLimitTest/Pods-MQSpeedLimitTest-frameworks.sh
+${PODS_ROOT}/MQNavigation/MQNavigation-3.5.0/MQNavigation.framework
+${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework

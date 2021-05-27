@@ -1,0 +1,21 @@
+PODS:
+  - MQNavigation (3.5.0):
+    - Protobuf
+  - Protobuf (3.17.0)
+
+DEPENDENCIES:
+  - MQNavigation (~> 3.5.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Protobuf
+  https://github.com/MapQuest/podspecs-ios.git:
+    - MQNavigation
+
+SPEC CHECKSUMS:
+  MQNavigation: 84f07aa35025b060b9ede220e9748be420688b4b
+  Protobuf: 7327d4444215b5f18e560a97f879ff5503c4581c
+
+PODFILE CHECKSUM: 9399be46935797861446e91d9cb45ad29cab46e0
+
+COCOAPODS: 1.9.3

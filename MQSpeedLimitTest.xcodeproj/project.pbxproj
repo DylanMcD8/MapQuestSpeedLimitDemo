@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 		6619023326600198009B5578 /* MQSpeedLimitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619023226600198009B5578 /* MQSpeedLimitTestTests.swift */; };
 		6619023E26600198009B5578 /* MQSpeedLimitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619023D26600198009B5578 /* MQSpeedLimitTestUITests.swift */; };
 		6619024C26600B8A009B5578 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619024B26600B89009B5578 /* AboutTableViewController.swift */; };
-		6619024E266020E8009B5578 /* MQNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6619024D266020E8009B5578 /* MQNavigation.framework */; };
+		AF8DC0495CFD894F6917283B /* Pods_MQSpeedLimitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16EFD1BDF7A81A2CFF340DC /* Pods_MQSpeedLimitTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		66190251266024B1009B5578 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6619021826600196009B5578 /* MQSpeedLimitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQSpeedLimitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6619021B26600196009B5578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +65,9 @@
 		6619023D26600198009B5578 /* MQSpeedLimitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQSpeedLimitTestUITests.swift; sourceTree = "<group>"; };
 		6619023F26600198009B5578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6619024B26600B89009B5578 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		6619024D266020E8009B5578 /* MQNavigation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MQNavigation.framework; sourceTree = "<group>"; };
+		8058E7ABDA29FE773A6E0B80 /* Pods-MQSpeedLimitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQSpeedLimitTest.release.xcconfig"; path = "Target Support Files/Pods-MQSpeedLimitTest/Pods-MQSpeedLimitTest.release.xcconfig"; sourceTree = "<group>"; };
+		CD57093380EC391D0E6EFB0A /* Pods-MQSpeedLimitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQSpeedLimitTest.debug.xcconfig"; path = "Target Support Files/Pods-MQSpeedLimitTest/Pods-MQSpeedLimitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E16EFD1BDF7A81A2CFF340DC /* Pods_MQSpeedLimitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQSpeedLimitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6619024E266020E8009B5578 /* MQNavigation.framework in Frameworks */,
+				AF8DC0495CFD894F6917283B /* Pods_MQSpeedLimitTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,8 @@
 				6619023126600198009B5578 /* MQSpeedLimitTestTests */,
 				6619023C26600198009B5578 /* MQSpeedLimitTestUITests */,
 				6619021926600196009B5578 /* Products */,
+				ECE98490A80D01B24FFB0E00 /* Pods */,
+				8F29995B67CE2F7F6172FE40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +129,6 @@
 				6619022426600198009B5578 /* Assets.xcassets */,
 				6619022626600198009B5578 /* LaunchScreen.storyboard */,
 				6619022926600198009B5578 /* Info.plist */,
-				6619024D266020E8009B5578 /* MQNavigation.framework */,
 			);
 			path = MQSpeedLimitTest;
 			sourceTree = "<group>";
@@ -135,6 +151,23 @@
 			path = MQSpeedLimitTestUITests;
 			sourceTree = "<group>";
 		};
+		8F29995B67CE2F7F6172FE40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16EFD1BDF7A81A2CFF340DC /* Pods_MQSpeedLimitTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECE98490A80D01B24FFB0E00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD57093380EC391D0E6EFB0A /* Pods-MQSpeedLimitTest.debug.xcconfig */,
+				8058E7ABDA29FE773A6E0B80 /* Pods-MQSpeedLimitTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6619024226600198009B5578 /* Build configuration list for PBXNativeTarget "MQSpeedLimitTest" */;
 			buildPhases = (
+				D232EFDC48134D5011F0DABC /* [CP] Check Pods Manifest.lock */,
 				6619021426600196009B5578 /* Sources */,
 				6619021526600196009B5578 /* Frameworks */,
 				6619021626600196009B5578 /* Resources */,
+				66190251266024B1009B5578 /* Embed Frameworks */,
+				6321C6BFAA1C78625633A0C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +295,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6321C6BFAA1C78625633A0C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MQSpeedLimitTest/Pods-MQSpeedLimitTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MQSpeedLimitTest/Pods-MQSpeedLimitTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MQSpeedLimitTest/Pods-MQSpeedLimitTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D232EFDC48134D5011F0DABC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MQSpeedLimitTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6619021426600196009B5578 /* Sources */ = {
@@ -441,6 +519,7 @@
 		};
 		6619024326600198009B5578 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD57093380EC391D0E6EFB0A /* Pods-MQSpeedLimitTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,11 +538,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
 		6619024426600198009B5578 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8058E7ABDA29FE773A6E0B80 /* Pods-MQSpeedLimitTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -482,6 +563,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

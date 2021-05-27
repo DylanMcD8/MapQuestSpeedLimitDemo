@@ -38,7 +38,7 @@
                                     <segue destination="XZp-fc-zXD" kind="presentation" id="pg0-wE-Z19"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="niw-iC-Glp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="niw-iC-Glp">
                                 <rect key="frame" x="70" y="445" width="274" height="182"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="182" id="XtS-aK-PSS"/>

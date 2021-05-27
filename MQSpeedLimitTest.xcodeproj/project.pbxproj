@@ -16,6 +16,7 @@
 		6619023326600198009B5578 /* MQSpeedLimitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619023226600198009B5578 /* MQSpeedLimitTestTests.swift */; };
 		6619023E26600198009B5578 /* MQSpeedLimitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619023D26600198009B5578 /* MQSpeedLimitTestUITests.swift */; };
 		6619024C26600B8A009B5578 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619024B26600B89009B5578 /* AboutTableViewController.swift */; };
+		6619024E266020E8009B5578 /* MQNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6619024D266020E8009B5578 /* MQNavigation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6619023D26600198009B5578 /* MQSpeedLimitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQSpeedLimitTestUITests.swift; sourceTree = "<group>"; };
 		6619023F26600198009B5578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6619024B26600B89009B5578 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		6619024D266020E8009B5578 /* MQNavigation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MQNavigation.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6619024E266020E8009B5578 /* MQNavigation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +112,7 @@
 				6619022426600198009B5578 /* Assets.xcassets */,
 				6619022626600198009B5578 /* LaunchScreen.storyboard */,
 				6619022926600198009B5578 /* Info.plist */,
+				6619024D266020E8009B5578 /* MQNavigation.framework */,
 			);
 			path = MQSpeedLimitTest;
 			sourceTree = "<group>";
@@ -442,6 +446,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6755LPJ5W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MQSpeedLimitTest",
+				);
 				INFOPLIST_FILE = MQSpeedLimitTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +469,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6755LPJ5W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MQSpeedLimitTest",
+				);
 				INFOPLIST_FILE = MQSpeedLimitTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

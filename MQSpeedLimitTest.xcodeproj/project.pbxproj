@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6619021C26600196009B5578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619021B26600196009B5578 /* AppDelegate.swift */; };
+		6619021E26600196009B5578 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619021D26600196009B5578 /* SceneDelegate.swift */; };
+		6619022026600196009B5578 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619021F26600196009B5578 /* ViewController.swift */; };
+		6619022326600196009B5578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6619022126600196009B5578 /* Main.storyboard */; };
+		6619022526600198009B5578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6619022426600198009B5578 /* Assets.xcassets */; };
+		6619022826600198009B5578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6619022626600198009B5578 /* LaunchScreen.storyboard */; };
+		6619023326600198009B5578 /* MQSpeedLimitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619023226600198009B5578 /* MQSpeedLimitTestTests.swift */; };
+		6619023E26600198009B5578 /* MQSpeedLimitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619023D26600198009B5578 /* MQSpeedLimitTestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6619022F26600198009B5578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6619021026600196009B5578 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6619021726600196009B5578;
+			remoteInfo = MQSpeedLimitTest;
+		};
+		6619023A26600198009B5578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6619021026600196009B5578 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6619021726600196009B5578;
+			remoteInfo = MQSpeedLimitTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6619021826600196009B5578 /* MQSpeedLimitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQSpeedLimitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6619021B26600196009B5578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6619021D26600196009B5578 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6619021F26600196009B5578 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6619022226600196009B5578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6619022426600198009B5578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6619022726600198009B5578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6619022926600198009B5578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6619022E26600198009B5578 /* MQSpeedLimitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQSpeedLimitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6619023226600198009B5578 /* MQSpeedLimitTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQSpeedLimitTestTests.swift; sourceTree = "<group>"; };
+		6619023426600198009B5578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6619023926600198009B5578 /* MQSpeedLimitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQSpeedLimitTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6619023D26600198009B5578 /* MQSpeedLimitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQSpeedLimitTestUITests.swift; sourceTree = "<group>"; };
+		6619023F26600198009B5578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6619021526600196009B5578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6619022B26600198009B5578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6619023626600198009B5578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6619020F26600196009B5578 = {
+			isa = PBXGroup;
+			children = (
+				6619021A26600196009B5578 /* MQSpeedLimitTest */,
+				6619023126600198009B5578 /* MQSpeedLimitTestTests */,
+				6619023C26600198009B5578 /* MQSpeedLimitTestUITests */,
+				6619021926600196009B5578 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6619021926600196009B5578 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6619021826600196009B5578 /* MQSpeedLimitTest.app */,
+				6619022E26600198009B5578 /* MQSpeedLimitTestTests.xctest */,
+				6619023926600198009B5578 /* MQSpeedLimitTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6619021A26600196009B5578 /* MQSpeedLimitTest */ = {
+			isa = PBXGroup;
+			children = (
+				6619021B26600196009B5578 /* AppDelegate.swift */,
+				6619021D26600196009B5578 /* SceneDelegate.swift */,
+				6619021F26600196009B5578 /* ViewController.swift */,
+				6619022126600196009B5578 /* Main.storyboard */,
+				6619022426600198009B5578 /* Assets.xcassets */,
+				6619022626600198009B5578 /* LaunchScreen.storyboard */,
+				6619022926600198009B5578 /* Info.plist */,
+			);
+			path = MQSpeedLimitTest;
+			sourceTree = "<group>";
+		};
+		6619023126600198009B5578 /* MQSpeedLimitTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				6619023226600198009B5578 /* MQSpeedLimitTestTests.swift */,
+				6619023426600198009B5578 /* Info.plist */,
+			);
+			path = MQSpeedLimitTestTests;
+			sourceTree = "<group>";
+		};
+		6619023C26600198009B5578 /* MQSpeedLimitTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6619023D26600198009B5578 /* MQSpeedLimitTestUITests.swift */,
+				6619023F26600198009B5578 /* Info.plist */,
+			);
+			path = MQSpeedLimitTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6619021726600196009B5578 /* MQSpeedLimitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6619024226600198009B5578 /* Build configuration list for PBXNativeTarget "MQSpeedLimitTest" */;
+			buildPhases = (
+				6619021426600196009B5578 /* Sources */,
+				6619021526600196009B5578 /* Frameworks */,
+				6619021626600196009B5578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQSpeedLimitTest;
+			productName = MQSpeedLimitTest;
+			productReference = 6619021826600196009B5578 /* MQSpeedLimitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6619022D26600198009B5578 /* MQSpeedLimitTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6619024526600198009B5578 /* Build configuration list for PBXNativeTarget "MQSpeedLimitTestTests" */;
+			buildPhases = (
+				6619022A26600198009B5578 /* Sources */,
+				6619022B26600198009B5578 /* Frameworks */,
+				6619022C26600198009B5578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6619023026600198009B5578 /* PBXTargetDependency */,
+			);
+			name = MQSpeedLimitTestTests;
+			productName = MQSpeedLimitTestTests;
+			productReference = 6619022E26600198009B5578 /* MQSpeedLimitTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6619023826600198009B5578 /* MQSpeedLimitTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6619024826600198009B5578 /* Build configuration list for PBXNativeTarget "MQSpeedLimitTestUITests" */;
+			buildPhases = (
+				6619023526600198009B5578 /* Sources */,
+				6619023626600198009B5578 /* Frameworks */,
+				6619023726600198009B5578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6619023B26600198009B5578 /* PBXTargetDependency */,
+			);
+			name = MQSpeedLimitTestUITests;
+			productName = MQSpeedLimitTestUITests;
+			productReference = 6619023926600198009B5578 /* MQSpeedLimitTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6619021026600196009B5578 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6619021726600196009B5578 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					6619022D26600198009B5578 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 6619021726600196009B5578;
+					};
+					6619023826600198009B5578 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 6619021726600196009B5578;
+					};
+				};
+			};
+			buildConfigurationList = 6619021326600196009B5578 /* Build configuration list for PBXProject "MQSpeedLimitTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6619020F26600196009B5578;
+			productRefGroup = 6619021926600196009B5578 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6619021726600196009B5578 /* MQSpeedLimitTest */,
+				6619022D26600198009B5578 /* MQSpeedLimitTestTests */,
+				6619023826600198009B5578 /* MQSpeedLimitTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6619021626600196009B5578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6619022826600198009B5578 /* LaunchScreen.storyboard in Resources */,
+				6619022526600198009B5578 /* Assets.xcassets in Resources */,
+				6619022326600196009B5578 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6619022C26600198009B5578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6619023726600198009B5578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6619021426600196009B5578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6619022026600196009B5578 /* ViewController.swift in Sources */,
+				6619021C26600196009B5578 /* AppDelegate.swift in Sources */,
+				6619021E26600196009B5578 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6619022A26600198009B5578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6619023326600198009B5578 /* MQSpeedLimitTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6619023526600198009B5578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6619023E26600198009B5578 /* MQSpeedLimitTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6619023026600198009B5578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6619021726600196009B5578 /* MQSpeedLimitTest */;
+			targetProxy = 6619022F26600198009B5578 /* PBXContainerItemProxy */;
+		};
+		6619023B26600198009B5578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6619021726600196009B5578 /* MQSpeedLimitTest */;
+			targetProxy = 6619023A26600198009B5578 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6619022126600196009B5578 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6619022226600196009B5578 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6619022626600198009B5578 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6619022726600198009B5578 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6619024026600198009B5578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6619024126600198009B5578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6619024326600198009B5578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6755LPJ5W2;
+				INFOPLIST_FILE = MQSpeedLimitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunapps.MQSpeedLimitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6619024426600198009B5578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6755LPJ5W2;
+				INFOPLIST_FILE = MQSpeedLimitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunapps.MQSpeedLimitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6619024626600198009B5578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6755LPJ5W2;
+				INFOPLIST_FILE = MQSpeedLimitTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunapps.MQSpeedLimitTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQSpeedLimitTest.app/MQSpeedLimitTest";
+			};
+			name = Debug;
+		};
+		6619024726600198009B5578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6755LPJ5W2;
+				INFOPLIST_FILE = MQSpeedLimitTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunapps.MQSpeedLimitTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQSpeedLimitTest.app/MQSpeedLimitTest";
+			};
+			name = Release;
+		};
+		6619024926600198009B5578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6755LPJ5W2;
+				INFOPLIST_FILE = MQSpeedLimitTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunapps.MQSpeedLimitTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MQSpeedLimitTest;
+			};
+			name = Debug;
+		};
+		6619024A26600198009B5578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6755LPJ5W2;
+				INFOPLIST_FILE = MQSpeedLimitTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunapps.MQSpeedLimitTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MQSpeedLimitTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6619021326600196009B5578 /* Build configuration list for PBXProject "MQSpeedLimitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6619024026600198009B5578 /* Debug */,
+				6619024126600198009B5578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6619024226600198009B5578 /* Build configuration list for PBXNativeTarget "MQSpeedLimitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6619024326600198009B5578 /* Debug */,
+				6619024426600198009B5578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6619024526600198009B5578 /* Build configuration list for PBXNativeTarget "MQSpeedLimitTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6619024626600198009B5578 /* Debug */,
+				6619024726600198009B5578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6619024826600198009B5578 /* Build configuration list for PBXNativeTarget "MQSpeedLimitTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6619024926600198009B5578 /* Debug */,
+				6619024A26600198009B5578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6619021026600196009B5578 /* Project object */;
+}

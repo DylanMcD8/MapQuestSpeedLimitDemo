@@ -15,6 +15,7 @@
 		6619022826600198009B5578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6619022626600198009B5578 /* LaunchScreen.storyboard */; };
 		6619023326600198009B5578 /* MQSpeedLimitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619023226600198009B5578 /* MQSpeedLimitTestTests.swift */; };
 		6619023E26600198009B5578 /* MQSpeedLimitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619023D26600198009B5578 /* MQSpeedLimitTestUITests.swift */; };
+		6619024C26600B8A009B5578 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619024B26600B89009B5578 /* AboutTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6619023926600198009B5578 /* MQSpeedLimitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQSpeedLimitTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6619023D26600198009B5578 /* MQSpeedLimitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQSpeedLimitTestUITests.swift; sourceTree = "<group>"; };
 		6619023F26600198009B5578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6619024B26600B89009B5578 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				6619021B26600196009B5578 /* AppDelegate.swift */,
 				6619021D26600196009B5578 /* SceneDelegate.swift */,
 				6619021F26600196009B5578 /* ViewController.swift */,
+				6619024B26600B89009B5578 /* AboutTableViewController.swift */,
 				6619022126600196009B5578 /* Main.storyboard */,
 				6619022426600198009B5578 /* Assets.xcassets */,
 				6619022626600198009B5578 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6619024C26600B8A009B5578 /* AboutTableViewController.swift in Sources */,
 				6619022026600196009B5578 /* ViewController.swift in Sources */,
 				6619021C26600196009B5578 /* AppDelegate.swift in Sources */,
 				6619021E26600196009B5578 /* SceneDelegate.swift in Sources */,

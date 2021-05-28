@@ -32,8 +32,8 @@
 // included by any sources outside this library. The contents of this file are
 // subject to change at any time without notice.
 
-#import "GPBDescriptor.h"
-#import "GPBWireFormat.h"
+#import <GPBDescriptor.h>
+#import <GPBWireFormat.h>
 
 // Describes attributes of the field.
 typedef NS_OPTIONS(uint16_t, GPBFieldFlags) {

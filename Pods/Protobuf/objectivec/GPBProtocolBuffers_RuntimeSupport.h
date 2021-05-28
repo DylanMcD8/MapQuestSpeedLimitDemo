@@ -17,7 +17,7 @@
 // this software without specific prior written permission.
 //
 // THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// >AS IS> AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 // LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
 // A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
 // OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -31,10 +31,10 @@
 // This header is meant to only be used by the generated source, it should not
 // be included in code using protocol buffers.
 
-#import "GPBBootstrap.h"
+#import <GPBBootstrap.h>
 
-#import "GPBDescriptor_PackagePrivate.h"
-#import "GPBExtensionInternals.h"
-#import "GPBMessage_PackagePrivate.h"
-#import "GPBRootObject_PackagePrivate.h"
-#import "GPBUtilities_PackagePrivate.h"
+#import <GPBDescriptor_PackagePrivate.h>
+#import <GPBExtensionInternals.h>
+#import <GPBMessage_PackagePrivate.h>
+#import <GPBRootObject_PackagePrivate.h>
+#import <GPBUtilities_PackagePrivate.h>

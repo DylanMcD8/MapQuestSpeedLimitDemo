@@ -30,7 +30,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "GPBRuntimeTypes.h"
+#import <GPBRuntimeTypes.h>
 
 @class GPBEnumDescriptor;
 @class GPBFieldDescriptor;

@@ -30,7 +30,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "GPBBootstrap.h"
+#import <GPBBootstrap.h>
 
 @class GPBEnumDescriptor;
 @class GPBMessage;

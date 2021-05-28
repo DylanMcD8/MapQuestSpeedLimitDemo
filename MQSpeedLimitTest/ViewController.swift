@@ -125,14 +125,14 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
     }
 
     @objc func EndNavigation(_ notification: Notification) {
-        print("Received!!")
+        print("Stopping!")
         navigationManager.cancelNavigation()
         speedLimitLabel.text = "?"
         stopNavButton.setTitle("   Start Navigation   ", for: .normal)
     }
     
     @objc func BeginNavigation(_ notification: Notification) {
-        print("Received!!")
+        print("Starting!")
         startRoute()
 //        speedLimitLabel.text = "?"
         stopNavButton.setTitle("   Stop Navigation   ", for: .normal)

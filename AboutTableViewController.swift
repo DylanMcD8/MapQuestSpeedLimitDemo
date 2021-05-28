@@ -35,7 +35,7 @@ class AboutTableViewController: UITableViewController, SFSafariViewControllerDel
             }
         }
         
-        if indexPath.section == 7 {
+        if indexPath.section == 6 {
             
             let urlString = "https://sunapps.org/privacypolicy"
             if let url = URL(string: urlString) {

@@ -11,6 +11,7 @@ import CoreLocation
 
 class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigationManagerPromptDelegate, CLLocationManagerDelegate {
     
+   
     var locationManager = CLLocationManager()
     
     func navigationManager(_ navigationManager: MQNavigationManager, receivedPrompt promptToSpeak: MQPrompt, userInitiated: Bool) {
@@ -35,6 +36,8 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
     @IBOutlet weak var SLLBottom: NSLayoutConstraint!
     @IBOutlet weak var SLLHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var stopNavButton: UIButton!
+    
     override func viewDidAppear(_ animated: Bool) {
         let totalScale = ((mainImage.bounds.width / 326) + (mainImage.bounds.height / 407)) / 2
         
@@ -47,8 +50,9 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
     }
     
     func navigationManager(_ navigationManager: MQNavigationManager, crossedSpeedLimitBoundariesWithExitedZones exitedSpeedLimits: Set<MQSpeedLimit>?, enteredZones enteredSpeedLimits: Set<MQSpeedLimit>?) {
-       // update UI to reflect new speeed limits.
+       // update UI to reflect new speed limits.
         print("NEW SPEED LIMIT: \(enteredSpeedLimits!)")
+        print("EXITED SPEED LIMIT: \(exitedSpeedLimits!)")
         
 //        guard let updateSpeedLimit = delegate?.update(speedLimit:) else { return }
         
@@ -71,7 +75,29 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
     }
 
     @IBAction func stopNavigation(_ sender: Any) {
-        navigationManager.cancelNavigation()
+        var titleToSet: String = ""
+        switch navigationManager.navigationManagerState {
+        case .navigating:
+            navigationManager.cancelNavigation()
+            titleToSet = "Start Navigation"
+            speedLimitLabel.text = "?"
+        case .paused:
+            navigationManager.resumeNavigation()
+            titleToSet = "Stop Navigation"
+        case .stopped:
+            startRoute()
+            titleToSet = "Stop Navigation"
+        default:
+            navigationManager.cancelNavigation()
+            titleToSet = "Start Navigation"
+            speedLimitLabel.text = "?"
+        }
+        
+        stopNavButton.setTitle("   \(titleToSet)   ", for: .normal)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("willDisappear")
     }
     
     fileprivate lazy var navigationManager: MQNavigationManager! = {
@@ -88,12 +114,31 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
+        startRoute()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(EndNavigation(_:)), name: NSNotification.Name(rawValue: "EndNavigation"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(BeginNavigation(_:)), name: NSNotification.Name(rawValue: "BeginNavigation"), object: nil)
+    }
+
+    @objc func EndNavigation(_ notification: Notification) {
+        print("Received!!")
+        navigationManager.cancelNavigation()
+        speedLimitLabel.text = "?"
+        stopNavButton.setTitle("   Start Navigation   ", for: .normal)
+    }
+    
+    @objc func BeginNavigation(_ notification: Notification) {
+        print("Received!!")
+        startRoute()
+//        speedLimitLabel.text = "?"
+        stopNavButton.setTitle("   Stop Navigation   ", for: .normal)
+    }
+    
+    func startRoute() {
         let options = MQRouteOptions()
         options.highways = .allow
         options.tolls = .allow
@@ -128,6 +173,6 @@ class ViewController: UIViewController, MQNavigationManagerDelegate, MQNavigatio
             
         }
     }
-
+    
 }
 

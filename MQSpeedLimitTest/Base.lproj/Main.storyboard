@@ -33,7 +33,7 @@
                                 </constraints>
                                 <state key="normal">
                                     <imageReference key="image" image="info" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="bold"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large" weight="bold"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -53,10 +53,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeG-vv-eMB">
-                                <rect key="frame" x="124.5" y="671.5" width="165" height="36"/>
+                                <rect key="frame" x="120" y="671.5" width="174" height="36"/>
                                 <color key="backgroundColor" name="Background"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="  Stop Navigation  "/>
+                                <state key="normal" title="   Stop Navigation   "/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="18"/>
@@ -92,6 +92,7 @@
                         <outlet property="SLLTrailing" destination="VmX-VE-5vb" id="4LK-D2-X6M"/>
                         <outlet property="mainImage" destination="EB1-lM-Mqb" id="4jb-iP-fYS"/>
                         <outlet property="speedLimitLabel" destination="niw-iC-Glp" id="AKf-Qt-G6Y"/>
+                        <outlet property="stopNavButton" destination="WeG-vv-eMB" id="zdR-3V-oIj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -211,7 +212,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sTI-AH-H5n">
                                                     <rect key="frame" x="20" y="25" width="334" height="122"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <string key="text">Sun Apps is an independent app development company from South Carolina, USA. It is run by student developer, Dylan McDonald. If you need to contact me, send me an email from Help and Feedback in Settings.</string>
+                                                    <string key="text">Sun Apps is an independent app development company from South Carolina, USA. It is run by student developer, Dylan McDonald. If you need to contact me, send me an email at sunapps@dlmconsulting.org.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>

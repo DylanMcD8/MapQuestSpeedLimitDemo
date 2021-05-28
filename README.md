@@ -7,4 +7,4 @@ Read more about MapQuest's Navigation SDK [here](https://developer.mapquest.com/
 
 Note: the app IS IN SWIFT, GitHub only identifies it as Objective-C because of the MapQuest-provided framwork code.
 
-![Hero Image](/Resources/MQ Speed Limit Demo Hero.png)
+[Hero Image](/Resources/MQ Speed Limit Demo Hero.png)

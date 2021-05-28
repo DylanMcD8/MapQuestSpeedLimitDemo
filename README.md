@@ -1,7 +1,7 @@
 # MapQuest Speed Limit Demo
 A simple demo app that demonstrates getting current Speed Limit data from the MapQuest Navigation SDK.
 
-<img width="300" height="798" src="/Resources/MQ-Speed-Limit Demo-Hero.png">
+<img width="300" height="798" src="/Resources/MQ Speed Limit Demo Hero {{ctx.theme}}.png">
 
 Remember to get your [free dev key](https://developer.mapquest.com). You will need this to run the app.
 
